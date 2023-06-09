@@ -52,4 +52,4 @@ This project is licensed under the [MIT License](LICENSE), allowing for the free
 
 If you have any questions or inquiries regarding this project, please feel free to reach out via the contact information provided in the repository.
 
-Thank you for your interest in this web scraping project focused on extracting articles about the Maple Leafs maple-leafs team.
+Thank you for your interest in this web scraping project focused on extracting articles about the Maple Leafs hockey team.
