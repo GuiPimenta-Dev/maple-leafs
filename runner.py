@@ -11,7 +11,7 @@ def get_filenames(folder_path):
     return filenames
 
 
-folder_path = "hockey/spiders"
+folder_path = "maple-leafs/spiders"
 filenames = get_filenames(folder_path)
 
 for filename in filenames:

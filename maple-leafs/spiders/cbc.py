@@ -5,7 +5,7 @@ from scrapy.utils.project import get_project_settings
 
 class CbcSpider(scrapy.Spider):
     name = "cbc"
-    start_urls = ["https://www.cbc.ca/sports/hockey/nhl"]
+    start_urls = ["https://www.cbc.ca/sports/maple-leafs/nhl"]
 
     def parse(self, response):
         links = response.xpath('//a[@data-cy="type-story"]')

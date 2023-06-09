@@ -10,7 +10,7 @@ class TheGlobeAndMailSpider(scrapy.Spider):
     start = 0
     size = 100
     url = (
-        'https://www.theglobeandmail.com/pf/api/v3/content/fetch/content-search?query={"contentQuery":"taxonomy.sites.path:/sports/hockey","from":'
+        'https://www.theglobeandmail.com/pf/api/v3/content/fetch/content-search?query={"contentQuery":"taxonomy.sites.path:/sports/maple-leafs","from":'
         + str(start)
         + ',"size":'
         + str(size)

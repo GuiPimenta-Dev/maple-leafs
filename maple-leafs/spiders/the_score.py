@@ -12,7 +12,7 @@ class TheScoreSpider(scrapy.Spider):
     def start_requests(self):
         base_url = "https://rich-content.thescore.com/content_cards"
         parameters = {
-            "resource_uris": "/hockey/leagues/1",
+            "resource_uris": "/maple-leafs/leagues/1",
             "limit": 50,
             "before": datetime.datetime.now(datetime.timezone.utc).strftime(
                 "%Y-%m-%dT%H:%M:%S.000Z"

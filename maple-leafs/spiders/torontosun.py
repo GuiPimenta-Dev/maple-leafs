@@ -1,13 +1,15 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 
 
-class NationalPostSpider(scrapy.Spider):
-    name = "national-post"
-    start_urls = ["https://nationalpost.com/category/sports/hockey/nhl"]
+class TorontosunSpider(scrapy.Spider):
+    name = "torontosun"
+    start_urls = [
+        f"https://torontosun.com/category/sports/maple-leafs/nhl/toronto-maple-leafs"
+    ]
 
     def parse(self, response):
         articles = response.xpath("//article[@data-category-colour='sports']")
@@ -45,7 +47,6 @@ class NationalPostSpider(scrapy.Spider):
         return formatted_date
 
 
-# args = {"keyword": "Maple Leafs"}
 # process = CrawlerProcess(get_project_settings())
-# process.crawl(NationalPostSpider, **args)
+# process.crawl(TorontosunSpider)
 # process.start("")

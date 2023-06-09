@@ -1,4 +1,4 @@
-# Scrapy settings for hockey project
+# Scrapy settings for maple-leafs project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "hockey"
+BOT_NAME = "maple-leafs"
 
-SPIDER_MODULES = ["hockey.spiders"]
-NEWSPIDER_MODULE = "hockey.spiders"
+SPIDER_MODULES = ["maple-leafs.spiders"]
+NEWSPIDER_MODULE = "maple-leafs.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -45,14 +45,14 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-    #    "hockey.middlewares.MyKeywordSpiderMiddleware": 543,
+    #    "maple-leafs.middlewares.MyKeywordSpiderMiddleware": 543,
     "scrapy_splash.SplashDeduplicateArgsMiddleware": 100,
 }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    #    "hockey.middlewares.MyKeywordDownloaderMiddleware": 543,
+    #    "maple-leafs.middlewares.MyKeywordDownloaderMiddleware": 543,
     "scrapy_splash.SplashCookiesMiddleware": 723,
     "scrapy_splash.SplashMiddleware": 725,
     "scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware": 810,
@@ -70,7 +70,7 @@ SPLASH_API_URL = "http://localhost:8050/render.html"
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    "hockey.pipelines.MyKeywordPipeline": 300,
+    "maple-leafs.pipelines.MyKeywordPipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

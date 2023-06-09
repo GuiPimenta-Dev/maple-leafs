@@ -5,7 +5,7 @@ from scrapy.utils.project import get_project_settings
 
 class DeadspinSpider(scrapy.Spider):
     name = "deadspin"
-    start_urls = ["https://deadspin.com/hockey"]
+    start_urls = ["https://deadspin.com/maple-leafs"]
 
     def parse(self, response):
         articles = response.xpath("//article")
