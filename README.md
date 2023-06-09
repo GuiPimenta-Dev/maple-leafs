@@ -13,6 +13,35 @@ This repository showcases a successful web scraping project that involved the de
 
 This project successfully scraped articles from twenty six different websites, provided by the client. The web crawlers were specifically designed to search for articles related to the Maple Leafs hockey team. The extracted information includes the article URL, title, author, and date published. All relevant data was stored in a database, enabling easy access and further analysis. The Bots are running in Digital Ocean on every 30 minutes searching for new articles.
 
+The Robots are retrieving the data from:
+
+- Global News
+- Bob McCown Podcast
+- NHL News
+- The Score
+- Fansided
+- CBC
+- Sporting News
+- NBC Sports
+- The Globe and Mail
+- CBS Sports
+- Forbes
+- Toronto Sun
+- Associated Press
+- CTV News
+- The Defector
+- NHL Maple Leafs
+- The Star
+- NHLPA
+- Bleacher Report
+- The Leafs Nation
+- The Athletic
+- ESPN
+- Deadspin
+- National Post
+- Editor in Leaf
+- SB Nation
+
 ![Items](result.jpeg)
 
 ## License
